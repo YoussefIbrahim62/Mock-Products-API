@@ -1,34 +1,23 @@
+var builder = WebApplication.CreateBuilder(args);
 
-namespace Mock_Products_API
+// 1. إضافة الخدمات (Services)
+builder.Services.AddControllers();
+
+// ---> التأكد من وجود هذين السطرين لإضافة Swagger
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+var app = builder.Build();
+
+// 2. تفعيل الـ Middleware لـ Swagger
+if (app.Environment.IsDevelopment())
 {
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
-            var builder = WebApplication.CreateBuilder(args);
-
-            // Add services to the container.
-
-            builder.Services.AddControllers();
-            // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-            builder.Services.AddOpenApi();
-
-            var app = builder.Build();
-
-            // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
-            {
-                app.MapOpenApi();
-            }
-
-            app.UseHttpsRedirection();
-
-            app.UseAuthorization();
-
-
-            app.MapControllers();
-
-            app.Run();
-        }
-    }
+    // ---> التأكد من وجود هذين السطرين لتشغيل واجهة Swagger
+    app.UseSwagger();
+    app.UseSwaggerUI(); // يتيح الوصول لـ /swagger/index.html
 }
+
+app.UseAuthorization();
+app.MapControllers();
+
+app.Run();
