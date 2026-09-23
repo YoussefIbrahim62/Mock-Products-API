@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\My Projects\\Mock Products API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D2CF94-6BDD-4F7E-DCB9-0B5CA8E3839A}|Mock Products API.csproj|d:\\my projects\\mock products api\\controllers\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D2CF94-6BDD-4F7E-DCB9-0B5CA8E3839A}|Mock Products API.csproj|solutionrelative:controllers\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5D2CF94-6BDD-4F7E-DCB9-0B5CA8E3839A}|Mock Products API.csproj|d:\\my projects\\mock products api\\mock products data layer\\obj\\debug\\net10.0\\mock products data layer.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5D2CF94-6BDD-4F7E-DCB9-0B5CA8E3839A}|Mock Products API.csproj|solutionrelative:mock products data layer\\obj\\debug\\net10.0\\mock products data layer.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFC75AD5-7464-4A08-955F-81DD9D7D886C}|Mock Products Data layer\\Mock Products Data layer.csproj|d:\\my projects\\mock products api\\mock products data layer\\clsproductdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFC75AD5-7464-4A08-955F-81DD9D7D886C}|Mock Products Data layer\\Mock Products Data layer.csproj|solutionrelative:mock products data layer\\clsproductdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89650765-A20D-466D-9230-079912433363}|Mock Products Business layer\\Mock Products Business layer.csproj|d:\\my projects\\mock products api\\mock products business layer\\clsproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89650765-A20D-466D-9230-079912433363}|Mock Products Business layer\\Mock Products Business layer.csproj|solutionrelative:mock products business layer\\clsproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Mock Products Data layer.AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\My Projects\\Mock Products API\\Mock Products Data layer\\obj\\Debug\\net10.0\\Mock Products Data layer.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Mock Products Data layer\\obj\\Debug\\net10.0\\Mock Products Data layer.AssemblyInfo.cs",
+              "ToolTip": "D:\\My Projects\\Mock Products API\\Mock Products Data layer\\obj\\Debug\\net10.0\\Mock Products Data layer.AssemblyInfo.cs",
+              "RelativeToolTip": "Mock Products Data layer\\obj\\Debug\\net10.0\\Mock Products Data layer.AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T15:02:17.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Products.cs",
+              "DocumentMoniker": "D:\\My Projects\\Mock Products API\\Controllers\\Products.cs",
+              "RelativeDocumentMoniker": "Controllers\\Products.cs",
+              "ToolTip": "D:\\My Projects\\Mock Products API\\Controllers\\Products.cs*",
+              "RelativeToolTip": "Controllers\\Products.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T14:57:00.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "clsProduct.cs",
+              "DocumentMoniker": "D:\\My Projects\\Mock Products API\\Mock Products Business layer\\clsProduct.cs",
+              "RelativeDocumentMoniker": "Mock Products Business layer\\clsProduct.cs",
+              "ToolTip": "D:\\My Projects\\Mock Products API\\Mock Products Business layer\\clsProduct.cs",
+              "RelativeToolTip": "Mock Products Business layer\\clsProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T13:22:06.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "clsProductData.cs",
+              "DocumentMoniker": "D:\\My Projects\\Mock Products API\\Mock Products Data layer\\clsProductData.cs",
+              "RelativeDocumentMoniker": "Mock Products Data layer\\clsProductData.cs",
+              "ToolTip": "D:\\My Projects\\Mock Products API\\Mock Products Data layer\\clsProductData.cs",
+              "RelativeToolTip": "Mock Products Data layer\\clsProductData.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA1wB4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T13:20:37.296Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

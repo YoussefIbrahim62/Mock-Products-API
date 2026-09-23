@@ -1,0 +1,16 @@
+D:\My Projects\Mock Products API\Mock Products Business layer\bin\Debug\net10.0\Mock Products Business layer.deps.json
+D:\My Projects\Mock Products API\Mock Products Business layer\bin\Debug\net10.0\Mock Products Business layer.dll
+D:\My Projects\Mock Products API\Mock Products Business layer\bin\Debug\net10.0\Mock Products Business layer.pdb
+D:\My Projects\Mock Products API\Mock Products Business layer\bin\Debug\net10.0\Mock Products Data layer.dll
+D:\My Projects\Mock Products API\Mock Products Business layer\bin\Debug\net10.0\Mock Products Data layer.pdb
+D:\My Projects\Mock Products API\Mock Products Business layer\obj\Debug\net10.0\Mock Products Business layer.csproj.AssemblyReference.cache
+D:\My Projects\Mock Products API\Mock Products Business layer\obj\Debug\net10.0\Mock Products Business layer.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Projects\Mock Products API\Mock Products Business layer\obj\Debug\net10.0\Mock Products Business layer.AssemblyInfoInputs.cache
+D:\My Projects\Mock Products API\Mock Products Business layer\obj\Debug\net10.0\Mock Products Business layer.AssemblyInfo.cs
+D:\My Projects\Mock Products API\Mock Products Business layer\obj\Debug\net10.0\Mock Products Business layer.csproj.CoreCompileInputs.cache
+D:\My Projects\Mock Products API\Mock Products Business layer\obj\Debug\net10.0\Mock Products Business layer.sourcelink.json
+D:\My Projects\Mock Products API\Mock Products Business layer\obj\Debug\net10.0\Mock Pro.2A05F9A5.Up2Date
+D:\My Projects\Mock Products API\Mock Products Business layer\obj\Debug\net10.0\Mock Products Business layer.dll
+D:\My Projects\Mock Products API\Mock Products Business layer\obj\Debug\net10.0\refint\Mock Products Business layer.dll
+D:\My Projects\Mock Products API\Mock Products Business layer\obj\Debug\net10.0\Mock Products Business layer.pdb
+D:\My Projects\Mock Products API\Mock Products Business layer\obj\Debug\net10.0\ref\Mock Products Business layer.dll

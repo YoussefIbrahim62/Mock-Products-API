@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="../Mock Products Business layer/Mock Products Business layer.csproj" />
+  <Project Path="../Mock Products Data layer/Mock Products Data layer.csproj" />
+  <Project Path="Mock Products API.csproj" />
+</Solution>

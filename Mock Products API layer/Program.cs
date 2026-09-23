@@ -17,7 +17,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(); // يتيح الوصول لـ /swagger/index.html
 }
 
-app.UseAuthorization();
+app.UseAuthorization(); 
+app.UseStaticFiles();
 app.MapControllers();
 
 app.Run();
