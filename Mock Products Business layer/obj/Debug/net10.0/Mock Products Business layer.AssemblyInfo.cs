@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mock Products Business layer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03dc1477f5abd3d32d07948c891bbe091c1cb7d4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f51041e32d9867dbc4898984b31adf1213ad0e43")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mock Products Business layer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mock Products Business layer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -32,10 +32,33 @@ namespace Mock_Products_Business_layer
                 }; 
             }
         }
+        private Create_UpdateProductDTO AddNew_UpdateProductDto
+        {
+            get
+            {
+                return new Create_UpdateProductDTO()
+                {
+                    Title = this.Title,
+                    Price = this.Price,
+                    Description = this.Description,
+                    Category = this.Category,
+                    ImageUrl = this.ImageUrl
+                };
+            }
+        }
 
-        private enMode Mode = enMode.AddNew;
+        private enMode Mode;
 
 
+        public clsProduct(Create_UpdateProductDTO newProductDto)
+        {
+            this.Title = newProductDto.Title;
+            this.Price = newProductDto.Price;
+            this.Description = newProductDto.Description;
+            this.Category = newProductDto.Category;
+            this.ImageUrl = newProductDto.ImageUrl;
+            this.Mode = enMode.AddNew;
+        }
 
         private clsProduct(ProductDTO productDto, enMode mode)
         {
@@ -47,7 +70,6 @@ namespace Mock_Products_Business_layer
             this.ImageUrl = productDto.ImageUrl;
             this.Mode = mode;
         }
-
 
         public static clsProduct FindById(int id)
         {
@@ -65,6 +87,62 @@ namespace Mock_Products_Business_layer
         {
             return clsProductData.GetAllProducts();
         }
+
+        public static List<ProductDTO> GetFilteredProducts(string? query)
+        {
+            return clsProductData.GetFilteredProducts(query);
+        }
+
+        public bool Save()
+        {
+            switch (Mode)
+            {
+                case enMode.AddNew:
+                    {
+                        if(_AddNewProduct())
+                        {
+                            this.Mode = enMode.Update;
+                            return true;
+                        }
+                        return false;
+                    }
+                case enMode.Update:
+                    {
+                        return _UpdateProduct();
+                    }
+                default:
+                    return false;   
+            }
+
+        }
+
+
+        public bool Delete()
+        {
+            return clsProductData.DeleteProduct(this.Id);
+        }
+
+        public static bool DeleteProduct(int id)
+        {
+            return clsProductData.DeleteProduct(id);
+        }
+
+
+
+        private bool _AddNewProduct()
+        {
+            int newProductId = clsProductData.AddNewProduct(this.AddNew_UpdateProductDto);
+            this.Id = newProductId;
+
+            return newProductId != -1;
+        }
+
+        private bool _UpdateProduct()
+        {
+            return clsProductData.UpdateProduct(this.Id, AddNew_UpdateProductDto);
+        }
+
+
 
 
     }
