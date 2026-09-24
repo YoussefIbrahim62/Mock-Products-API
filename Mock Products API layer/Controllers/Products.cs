@@ -36,6 +36,35 @@ namespace Mock_Products_API.Controllers
 
 
 
+        [HttpGet("{id}",Name = "GetProductById")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult GetProductById(int id)
+        {
+            if (id <= 0)
+                return BadRequest("Invalid product id");
+
+            clsProduct FoundProduct = clsProduct.FindById(id);
+
+            if (FoundProduct == null)
+                return NotFound($"Product with id= {id} doesn't exist");
+
+
+
+            var productDTO = FoundProduct.ProductDTO;
+
+            if (!string.IsNullOrEmpty(FoundProduct.ImageUrl))
+            {
+                var baseURL = $"{Request.Scheme}://{Request.Host}" + FoundProduct.ImageUrl;
+                productDTO.ImageUrl = baseURL;
+            }
+
+            
+            return Ok(productDTO);
+
+        }
+
 
     }
 

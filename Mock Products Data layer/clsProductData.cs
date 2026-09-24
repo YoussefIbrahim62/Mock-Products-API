@@ -6,7 +6,7 @@ namespace Mock_Products_Data_layer
     public static class clsProductData
     {
         public class ProductDTO
-        { 
+        {
             public int Id { get; set; }
             public string Title { get; set; }
             public decimal Price { get; set; }
@@ -23,24 +23,24 @@ namespace Mock_Products_Data_layer
         {
             var products = new List<ProductDTO>();
 
-            using(SqlConnection conn = new SqlConnection(_ConnectionString))
+            using (SqlConnection conn = new SqlConnection(_ConnectionString))
             {
                 using (SqlCommand cmd = new SqlCommand("SP_GetAllProducts", conn))
                 {
                     conn.Open();
                     cmd.CommandType = CommandType.StoredProcedure;
 
-                    using(SqlDataReader reader = cmd.ExecuteReader())
+                    using (SqlDataReader reader = cmd.ExecuteReader())
                     {
-                        while(reader.Read())
+                        while (reader.Read())
                         {
                             products.Add(
-                            new ProductDTO 
-                            { 
+                            new ProductDTO
+                            {
                                 Id = reader.GetInt32(reader.GetOrdinal("Id")),
                                 Price = reader.GetDecimal(reader.GetOrdinal("Price")),
                                 Title = reader.GetString(reader.GetOrdinal("title")),
-                                Description = reader.IsDBNull(reader.GetOrdinal("description")) ? null : reader.GetString(reader.GetOrdinal("Description")),
+                                Description = reader.IsDBNull(reader.GetOrdinal("Description")) ? null : reader.GetString(reader.GetOrdinal("Description")),
                                 Category = reader.GetString(reader.GetOrdinal("Category")),
                                 ImageUrl = reader.IsDBNull(reader.GetOrdinal("ImageUrl")) ? null : reader.GetString(reader.GetOrdinal("ImageUrl")),
                             });
@@ -59,6 +59,39 @@ namespace Mock_Products_Data_layer
 
         }
 
+
+        public static ProductDTO GetProductById(int id)
+        {
+            using (SqlConnection conn = new SqlConnection(_ConnectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand("SP_GetProductById", conn))
+                {
+                    conn.Open();
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@Id", id);
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return new ProductDTO
+                            {
+                                Id = reader.GetInt32(reader.GetOrdinal("Id")),
+                                Price = reader.GetDecimal(reader.GetOrdinal("Price")),
+                                Title = reader.GetString(reader.GetOrdinal("title")),
+                                Description = reader.IsDBNull(reader.GetOrdinal("Description")) ? null : reader.GetString(reader.GetOrdinal("Description")),
+                                Category = reader.GetString(reader.GetOrdinal("Category")),
+                                ImageUrl = reader.IsDBNull(reader.GetOrdinal("ImageUrl")) ? null : reader.GetString(reader.GetOrdinal("ImageUrl")),
+                            };
+                        }
+                        else
+                            return null;
+                    }
+                }
+            }
+
+
+        }
 
 
 
